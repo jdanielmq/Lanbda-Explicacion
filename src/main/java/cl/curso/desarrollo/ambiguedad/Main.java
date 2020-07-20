@@ -10,7 +10,8 @@ public class Main {
 	}
 	
 	private static CalculadoraLong create() {
-		return (x, y) -> System.out.println(x/y);
+		long var = 50;
+		return (x, y) -> System.out.println(x / y - var);
 	}
 
 }
