@@ -17,5 +17,15 @@ public class Evaluador {
 		}
 		return listaEmpleados;
 	}
+	
+	public  List<Empleado> evaluarAlContario(List<Empleado> listEmpl, Predicate<Empleado> predicate) {
+		List<Empleado> listaEmpleados = new ArrayList<>(0);
+		for (Empleado empleado : listEmpl) {
+			if(predicate.negate().test(empleado)){
+				listaEmpleados.add(empleado);
+			}
+		}
+		return listaEmpleados;
+	}
 
 }

@@ -52,8 +52,15 @@ public class Principal {
 			
 			System.out.println("Nombre: "+ e.getNombre() +" edad: "+ e.getEdad() +" Salario Actual: "+ e.getSalario() +" Salario Nuevo: "+ nuevoSalario);
 			
+			e.setSalario(nuevoSalario);
 		}
-			
+		
+		System.out.println("\nEmpleado mayores de 25 años:");
+		List<Empleado> listaEmpleadoMayores = eval.evaluarAlContario(listaEmpleados, empleado -> empleado.getEdad() < 25 );
+		for (Empleado e : listaEmpleadoMayores) 
+			System.out.println("Nombre: "+ e.getNombre() +" edad: "+ e.getEdad());			
+		
+		
 		
 	}
 
