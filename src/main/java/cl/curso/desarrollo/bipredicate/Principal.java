@@ -43,18 +43,10 @@ public class Principal {
 		for (Empleado e : listaFinal) {
 			System.out.println("Nombre: "+ e.getNombre() +" - Edad:"+ e.getEdad() +" Departamento:"+ e.getDepartamento());
 			
+			
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+	
+
 
 	}
 
