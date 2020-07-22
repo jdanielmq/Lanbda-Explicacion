@@ -5,6 +5,8 @@ public class Persona implements Comparable<Persona>{
 	private int idPersona;
 	private String nombre;
 	private java.util.Date fechaNacimiento;
+	private Integer edad;
+	private String correo;
 	
 	public Persona() {	}
 	
@@ -13,6 +15,14 @@ public class Persona implements Comparable<Persona>{
 		this.idPersona = idPersona;
 		this.nombre = nombre;
 	}
+	
+	public Persona(String nombre, int edad, String correo) {
+		super();
+		this.nombre = nombre;
+		this.edad = edad;
+		this.correo = correo;
+	}
+	
 	public int getIdPersona() {
 		return idPersona;
 	}
@@ -32,6 +42,23 @@ public class Persona implements Comparable<Persona>{
 		this.fechaNacimiento = fechaNacimiento;
 	}
 	
+	public Integer getEdad() {
+		return edad;
+	}
+
+	public void setEdad(Integer edad) {
+		this.edad = edad;
+	}
+
+	public String getCorreo() {
+		return correo;
+	}
+
+
+
+	public void setCorreo(String correo) {
+		this.correo = correo;
+	}
 
 	@Override
 	public String toString() {
