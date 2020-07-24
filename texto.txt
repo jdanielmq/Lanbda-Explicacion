@@ -21,3 +21,5 @@ Se enumeran situaciones de manera que vamos de lo más importante a lo menos imp
 Dialogado
 Es una conversación entre un hablante y un oyente que van alternando estos papeles.
 Es importante mencionar que muchas veces los textos utilizan varios tipos de párrafos, es decir que por ejemplo, un artículo en el periódico puede ser descriptivo, expositivo y narrativo al mismo tiempo.
+
+
