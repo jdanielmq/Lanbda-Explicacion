@@ -16,11 +16,15 @@ public class InfoComensales {
 		for (Object object : listaFinal) {
 			System.out.println(object);
 		}
+		System.out.println("salto de linea \n");
+		listaFinal
+		.stream()
+		.filter(x -> (long)x < 5000)
+		.forEach(System.out::println);
 		
 	}
 	
-	public static List<Object> getDatosComensales(List<DatoComensal> lista,
-												Function<DatoComensal, Object> fun){
+	public static List<Object> getDatosComensales(List<DatoComensal> lista,	Function<DatoComensal, Object> fun){
 		
 		List<Object> listaNueva = new ArrayList<>(0);
 		for(DatoComensal dato : lista) {

@@ -10,7 +10,7 @@ public class EjercicioBiFunctionEmpleado {
 	public static void main(String[] args) {
 		
 		List<Empleado> listaEmpleados = Arrays.asList(
-				new Empleado(23456432, "Francisco Daniel", 25469333),
+				new Empleado(23456432, "Francisco Daniel", 200000),
 				new Empleado(4567865, "Juanito", 254693),
 				new Empleado(23456432, "manuela", 98767876),
 				new Empleado(23456432, "oscar", 857455),
@@ -26,6 +26,16 @@ public class EjercicioBiFunctionEmpleado {
 		for (Double monto : salarios) {
 			System.out.println(monto);
 		}
+		
+		double sumaTotal = salarios
+				          .stream()
+				          .filter(x -> x > 0.0)
+				          .map(x -> x)
+				          .reduce(0.0, Double::sum);
+		
+		System.out.println("Totales : "+ sumaTotal);
+		
+
 		
 	}
 	

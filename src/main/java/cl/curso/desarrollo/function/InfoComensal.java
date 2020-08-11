@@ -17,8 +17,7 @@ public class InfoComensal {
 	}
 	
 	
-	public static Object getDatoComensal(DatoComensal comensal, 
-										Function<DatoComensal, Object> fun) {
+	public static Object getDatoComensal(DatoComensal comensal, Function<DatoComensal, Object> fun) {
 		return fun.apply(comensal);
 		
 	}
